@@ -1979,11 +1979,11 @@ type Memo struct {
 	//   MEMO_RETURN:
 	//      RetHash() *Hash
 	//   MEMO_TEXT_1024B:
-	//      Text() *string // bound 1024
+	//      Text1024() *string // bound 1024
 	//   MEMO_TEXT_2048B:
-	//      Text() *string // bound 2048
+	//      Text2048() *string // bound 2048
 	//   MEMO_TEXT_4096B:
-	//      Text() *string // bound 4096
+	//      Text4096() *string // bound 4096
 	Type MemoType
 	_u   interface{}
 }
@@ -13857,7 +13857,7 @@ func (u *Memo) RetHash() *Hash {
 		return nil
 	}
 }
-func (u *Memo) Text() *string {
+func (u *Memo) Text1024() *string {
 	switch u.Type {
 	case MEMO_TEXT_1024B:
 		if v, ok := u._u.(*string); ok {
@@ -13868,11 +13868,11 @@ func (u *Memo) Text() *string {
 			return &zero
 		}
 	default:
-		XdrPanic("Memo.Text accessed when Type == %v", u.Type)
+		XdrPanic("Memo.Text1024 accessed when Type == %v", u.Type)
 		return nil
 	}
 }
-func (u *Memo) Text() *string {
+func (u *Memo) Text2048() *string {
 	switch u.Type {
 	case MEMO_TEXT_2048B:
 		if v, ok := u._u.(*string); ok {
@@ -13883,11 +13883,11 @@ func (u *Memo) Text() *string {
 			return &zero
 		}
 	default:
-		XdrPanic("Memo.Text accessed when Type == %v", u.Type)
+		XdrPanic("Memo.Text2048 accessed when Type == %v", u.Type)
 		return nil
 	}
 }
-func (u *Memo) Text() *string {
+func (u *Memo) Text4096() *string {
 	switch u.Type {
 	case MEMO_TEXT_4096B:
 		if v, ok := u._u.(*string); ok {
@@ -13898,7 +13898,7 @@ func (u *Memo) Text() *string {
 			return &zero
 		}
 	default:
-		XdrPanic("Memo.Text accessed when Type == %v", u.Type)
+		XdrPanic("Memo.Text4096 accessed when Type == %v", u.Type)
 		return nil
 	}
 }
@@ -13928,11 +13928,11 @@ func (u *Memo) XdrUnionBody() XdrType {
 	case MEMO_RETURN:
 		return XDR_Hash(u.RetHash())
 	case MEMO_TEXT_1024B:
-		return XdrString{u.Text(), 1024}
+		return XdrString{u.Text1024(), 1024}
 	case MEMO_TEXT_2048B:
-		return XdrString{u.Text(), 2048}
+		return XdrString{u.Text2048(), 2048}
 	case MEMO_TEXT_4096B:
-		return XdrString{u.Text(), 4096}
+		return XdrString{u.Text4096(), 4096}
 	}
 	return nil
 }
@@ -13949,11 +13949,11 @@ func (u *Memo) XdrUnionBodyName() string {
 	case MEMO_RETURN:
 		return "RetHash"
 	case MEMO_TEXT_1024B:
-		return "Text"
+		return "Text1024"
 	case MEMO_TEXT_2048B:
-		return "Text"
+		return "Text2048"
 	case MEMO_TEXT_4096B:
-		return "Text"
+		return "Text4096"
 	}
 	return ""
 }
@@ -13985,13 +13985,13 @@ func (u *Memo) XdrRecurse(x XDR, name string) {
 		x.Marshal(x.Sprintf("%sretHash", name), XDR_Hash(u.RetHash()))
 		return
 	case MEMO_TEXT_1024B:
-		x.Marshal(x.Sprintf("%stext", name), XdrString{u.Text(), 1024})
+		x.Marshal(x.Sprintf("%stext1024", name), XdrString{u.Text1024(), 1024})
 		return
 	case MEMO_TEXT_2048B:
-		x.Marshal(x.Sprintf("%stext", name), XdrString{u.Text(), 2048})
+		x.Marshal(x.Sprintf("%stext2048", name), XdrString{u.Text2048(), 2048})
 		return
 	case MEMO_TEXT_4096B:
-		x.Marshal(x.Sprintf("%stext", name), XdrString{u.Text(), 4096})
+		x.Marshal(x.Sprintf("%stext4096", name), XdrString{u.Text4096(), 4096})
 		return
 	}
 	XdrPanic("invalid Type (%v) in Memo", u.Type)

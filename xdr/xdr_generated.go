@@ -3,12 +3,12 @@
 
 // Package xdr is generated from:
 //
-//	xdr/Stellar-SCP.x
-//	xdr/Stellar-ledger-entries.x
-//	xdr/Stellar-ledger.x
-//	xdr/Stellar-overlay.x
-//	xdr/Stellar-transaction.x
-//	xdr/Stellar-types.x
+//  xdr/Stellar-SCP.x
+//  xdr/Stellar-ledger-entries.x
+//  xdr/Stellar-ledger.x
+//  xdr/Stellar-overlay.x
+//  xdr/Stellar-transaction.x
+//  xdr/Stellar-types.x
 //
 // DO NOT EDIT or your changes may be overwritten
 package xdr
@@ -28,7 +28,7 @@ var XdrFilesSHA256 = map[string]string{
 	"xdr/Stellar-ledger-entries.x": "3aa135c309c2d67883f165961739b4940c90df59240d8aeef55deced8d7708b5",
 	"xdr/Stellar-ledger.x":         "96ac88de23d2b0f2f23a0495527c8aefb8623b4db0e39ba34f357d10a211c214",
 	"xdr/Stellar-overlay.x":        "3093b425866f34b32702d80d5298f9f2dc00736b0fdaac7efa653490a39fb231",
-	"xdr/Stellar-transaction.x":    "45fdeb428e68d6b07e3e3157b6404567e0efb712c9d4c90a61a1035854c32b90",
+	"xdr/Stellar-transaction.x":    "f92aa4e0e7bbd9edf2f61912fbdd085b59576ef7b8ceab5bd3fd8f807d7e090e",
 	"xdr/Stellar-types.x":          "60b7588e573f5e5518766eb5e6b6ea42f0e53144663cbe557e485cceb6306c85",
 }
 
@@ -23366,24 +23366,33 @@ var _ xdrType = (*HashIdPreimage)(nil)
 //	     MEMO_TEXT = 1,
 //	     MEMO_ID = 2,
 //	     MEMO_HASH = 3,
-//	     MEMO_RETURN = 4
+//	     MEMO_RETURN = 4,
+//	     MEMO_TEXT_1024B = 110,
+//	     MEMO_TEXT_2048B = 120,
+//	     MEMO_TEXT_4096B = 130
 //	 };
 type MemoType int32
 
 const (
-	MemoTypeMemoNone   MemoType = 0
-	MemoTypeMemoText   MemoType = 1
-	MemoTypeMemoId     MemoType = 2
-	MemoTypeMemoHash   MemoType = 3
-	MemoTypeMemoReturn MemoType = 4
+	MemoTypeMemoNone      MemoType = 0
+	MemoTypeMemoText      MemoType = 1
+	MemoTypeMemoId        MemoType = 2
+	MemoTypeMemoHash      MemoType = 3
+	MemoTypeMemoReturn    MemoType = 4
+	MemoTypeMemoText1024B MemoType = 110
+	MemoTypeMemoText2048B MemoType = 120
+	MemoTypeMemoText4096B MemoType = 130
 )
 
 var memoTypeMap = map[int32]string{
-	0: "MemoTypeMemoNone",
-	1: "MemoTypeMemoText",
-	2: "MemoTypeMemoId",
-	3: "MemoTypeMemoHash",
-	4: "MemoTypeMemoReturn",
+	0:   "MemoTypeMemoNone",
+	1:   "MemoTypeMemoText",
+	2:   "MemoTypeMemoId",
+	3:   "MemoTypeMemoHash",
+	4:   "MemoTypeMemoReturn",
+	110: "MemoTypeMemoText1024B",
+	120: "MemoTypeMemoText2048B",
+	130: "MemoTypeMemoText4096B",
 }
 
 // ValidEnum validates a proposed value for this enum.  Implements
@@ -23464,13 +23473,22 @@ var _ xdrType = (*MemoType)(nil)
 //	     Hash hash; // the hash of what to pull from the content server
 //	 case MEMO_RETURN:
 //	     Hash retHash; // the hash of the tx you are rejecting
+//	 case MEMO_TEXT_1024B:
+//	     string text1024<1024>;
+//	 case MEMO_TEXT_2048B:
+//	     string text2048<2048>;
+//	 case MEMO_TEXT_4096B:
+//	     string text4096<4096>;
 //	 };
 type Memo struct {
-	Type    MemoType
-	Text    *string `xdrmaxsize:"28"`
-	Id      *Uint64
-	Hash    *Hash
-	RetHash *Hash
+	Type     MemoType
+	Text     *string `xdrmaxsize:"28"`
+	Id       *Uint64
+	Hash     *Hash
+	RetHash  *Hash
+	Text1024 *string `xdrmaxsize:"1024"`
+	Text2048 *string `xdrmaxsize:"2048"`
+	Text4096 *string `xdrmaxsize:"4096"`
 }
 
 // SwitchFieldName returns the field name in which this union's
@@ -23493,6 +23511,12 @@ func (u Memo) ArmForSwitch(sw int32) (string, bool) {
 		return "Hash", true
 	case MemoTypeMemoReturn:
 		return "RetHash", true
+	case MemoTypeMemoText1024B:
+		return "Text1024", true
+	case MemoTypeMemoText2048B:
+		return "Text2048", true
+	case MemoTypeMemoText4096B:
+		return "Text4096", true
 	}
 	return "-", false
 }
@@ -23531,6 +23555,27 @@ func NewMemo(aType MemoType, value interface{}) (result Memo, err error) {
 			return
 		}
 		result.RetHash = &tv
+	case MemoTypeMemoText1024B:
+		tv, ok := value.(string)
+		if !ok {
+			err = fmt.Errorf("invalid value, must be string")
+			return
+		}
+		result.Text1024 = &tv
+	case MemoTypeMemoText2048B:
+		tv, ok := value.(string)
+		if !ok {
+			err = fmt.Errorf("invalid value, must be string")
+			return
+		}
+		result.Text2048 = &tv
+	case MemoTypeMemoText4096B:
+		tv, ok := value.(string)
+		if !ok {
+			err = fmt.Errorf("invalid value, must be string")
+			return
+		}
+		result.Text4096 = &tv
 	}
 	return
 }
@@ -23635,6 +23680,81 @@ func (u Memo) GetRetHash() (result Hash, ok bool) {
 	return
 }
 
+// MustText1024 retrieves the Text1024 value from the union,
+// panicing if the value is not set.
+func (u Memo) MustText1024() string {
+	val, ok := u.GetText1024()
+
+	if !ok {
+		panic("arm Text1024 is not set")
+	}
+
+	return val
+}
+
+// GetText1024 retrieves the Text1024 value from the union,
+// returning ok if the union's switch indicated the value is valid.
+func (u Memo) GetText1024() (result string, ok bool) {
+	armName, _ := u.ArmForSwitch(int32(u.Type))
+
+	if armName == "Text1024" {
+		result = *u.Text1024
+		ok = true
+	}
+
+	return
+}
+
+// MustText2048 retrieves the Text2048 value from the union,
+// panicing if the value is not set.
+func (u Memo) MustText2048() string {
+	val, ok := u.GetText2048()
+
+	if !ok {
+		panic("arm Text2048 is not set")
+	}
+
+	return val
+}
+
+// GetText2048 retrieves the Text2048 value from the union,
+// returning ok if the union's switch indicated the value is valid.
+func (u Memo) GetText2048() (result string, ok bool) {
+	armName, _ := u.ArmForSwitch(int32(u.Type))
+
+	if armName == "Text2048" {
+		result = *u.Text2048
+		ok = true
+	}
+
+	return
+}
+
+// MustText4096 retrieves the Text4096 value from the union,
+// panicing if the value is not set.
+func (u Memo) MustText4096() string {
+	val, ok := u.GetText4096()
+
+	if !ok {
+		panic("arm Text4096 is not set")
+	}
+
+	return val
+}
+
+// GetText4096 retrieves the Text4096 value from the union,
+// returning ok if the union's switch indicated the value is valid.
+func (u Memo) GetText4096() (result string, ok bool) {
+	armName, _ := u.ArmForSwitch(int32(u.Type))
+
+	if armName == "Text4096" {
+		result = *u.Text4096
+		ok = true
+	}
+
+	return
+}
+
 // EncodeTo encodes this value using the Encoder.
 func (u Memo) EncodeTo(e *xdr.Encoder) error {
 	var err error
@@ -23662,6 +23782,21 @@ func (u Memo) EncodeTo(e *xdr.Encoder) error {
 		return nil
 	case MemoTypeMemoReturn:
 		if err = (*u.RetHash).EncodeTo(e); err != nil {
+			return err
+		}
+		return nil
+	case MemoTypeMemoText1024B:
+		if _, err = e.EncodeString(string((*u.Text1024))); err != nil {
+			return err
+		}
+		return nil
+	case MemoTypeMemoText2048B:
+		if _, err = e.EncodeString(string((*u.Text2048))); err != nil {
+			return err
+		}
+		return nil
+	case MemoTypeMemoText4096B:
+		if _, err = e.EncodeString(string((*u.Text4096))); err != nil {
 			return err
 		}
 		return nil
@@ -23714,6 +23849,30 @@ func (u *Memo) DecodeFrom(d *xdr.Decoder) (int, error) {
 		n += nTmp
 		if err != nil {
 			return n, fmt.Errorf("decoding Hash: %s", err)
+		}
+		return n, nil
+	case MemoTypeMemoText1024B:
+		u.Text1024 = new(string)
+		(*u.Text1024), nTmp, err = d.DecodeString(1024)
+		n += nTmp
+		if err != nil {
+			return n, fmt.Errorf("decoding Text1024: %s", err)
+		}
+		return n, nil
+	case MemoTypeMemoText2048B:
+		u.Text2048 = new(string)
+		(*u.Text2048), nTmp, err = d.DecodeString(2048)
+		n += nTmp
+		if err != nil {
+			return n, fmt.Errorf("decoding Text2048: %s", err)
+		}
+		return n, nil
+	case MemoTypeMemoText4096B:
+		u.Text4096 = new(string)
+		(*u.Text4096), nTmp, err = d.DecodeString(4096)
+		n += nTmp
+		if err != nil {
+			return n, fmt.Errorf("decoding Text4096: %s", err)
 		}
 		return n, nil
 	}
