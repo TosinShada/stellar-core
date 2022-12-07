@@ -16,3 +16,15 @@ func MemoHash(hash Hash) Memo {
 func MemoRetHash(hash Hash) Memo {
 	return Memo{Type: MemoTypeMemoReturn, RetHash: &hash}
 }
+
+func MemoText1024B(text string) Memo {
+	return Memo{Type: MemoTypeMemoText1024B, Text: &text}
+}
+
+func MemoText2048B(text string) Memo {
+	return Memo{Type: MemoTypeMemoText2048B, Text: &text}
+}
+
+func MemoText4096B(text string) Memo {
+	return Memo{Type: MemoTypeMemoText4096B, Text: &text}
+}
