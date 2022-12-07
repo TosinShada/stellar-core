@@ -132,3 +132,5 @@ require (
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c // indirect
 )
+
+replace github.com/stellar/go => github.com/TosinShada/stellar-core v0.0.0-20221206233542-e4ced6455305
