@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stellar/go/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
 	"github.com/stretchr/testify/require"
 )
 

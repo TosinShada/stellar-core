@@ -4,11 +4,11 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/stellar/go/protocols/horizon"
-	horizonContext "github.com/stellar/go/services/horizon/internal/context"
-	"github.com/stellar/go/services/horizon/internal/ingest"
-	"github.com/stellar/go/services/horizon/internal/ledger"
-	"github.com/stellar/go/support/render/hal"
+	"github.com/TosinShada/stellar-core/protocols/horizon"
+	horizonContext "github.com/TosinShada/stellar-core/services/horizon/internal/context"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ingest"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ledger"
+	"github.com/TosinShada/stellar-core/support/render/hal"
 )
 
 // Populate fills in the details

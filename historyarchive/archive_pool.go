@@ -7,8 +7,8 @@ package historyarchive
 import (
 	"math/rand"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // A ArchivePool is just a collection of `ArchiveInterface`s so that we can

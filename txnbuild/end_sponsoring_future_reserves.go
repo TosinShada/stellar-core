@@ -3,8 +3,8 @@
 package txnbuild
 
 import (
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // EndSponsoringFutureReserves represents the Stellar begin sponsoring future reserves operation. See

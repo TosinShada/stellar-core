@@ -7,15 +7,15 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
+	"github.com/TosinShada/stellar-core/historyarchive"
+	horizon "github.com/TosinShada/stellar-core/services/horizon/internal"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ingest"
+	support "github.com/TosinShada/stellar-core/support/config"
+	"github.com/TosinShada/stellar-core/support/db"
+	"github.com/TosinShada/stellar-core/support/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/stellar/go/historyarchive"
-	horizon "github.com/stellar/go/services/horizon/internal"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/services/horizon/internal/ingest"
-	support "github.com/stellar/go/support/config"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/log"
 )
 
 var ingestCmd = &cobra.Command{

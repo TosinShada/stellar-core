@@ -5,15 +5,15 @@ import (
 	"net/http"
 	"strings"
 
-	protocol "github.com/stellar/go/protocols/horizon"
-	horizonContext "github.com/stellar/go/services/horizon/internal/context"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/services/horizon/internal/ledger"
-	"github.com/stellar/go/services/horizon/internal/resourceadapter"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/render/hal"
-	"github.com/stellar/go/support/render/problem"
-	"github.com/stellar/go/xdr"
+	protocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	horizonContext "github.com/TosinShada/stellar-core/services/horizon/internal/context"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ledger"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/resourceadapter"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/render/hal"
+	"github.com/TosinShada/stellar-core/support/render/problem"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // AccountInfo returns the information about an account identified by addr.

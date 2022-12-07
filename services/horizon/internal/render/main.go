@@ -3,8 +3,8 @@ package render
 import (
 	"net/http"
 
+	"github.com/TosinShada/stellar-core/support/log"
 	"github.com/adjust/goautoneg"
-	"github.com/stellar/go/support/log"
 )
 
 // Negotiate inspects the Accept header of the provided request and determines

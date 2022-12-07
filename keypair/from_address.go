@@ -4,8 +4,8 @@ import (
 	"crypto/ed25519"
 	"encoding"
 
-	"github.com/stellar/go/strkey"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/strkey"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // FromAddress represents a keypair to which only the address is know.  This KP

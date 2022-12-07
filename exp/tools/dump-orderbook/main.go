@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/stellar/go/historyarchive"
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/historyarchive"
+	"github.com/TosinShada/stellar-core/ingest"
+	"github.com/TosinShada/stellar-core/support/log"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // This program will dump all the offers from a history archive checkpoint.

@@ -7,12 +7,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/TosinShada/stellar-core/exp/services/recoverysigner/internal/account"
+	"github.com/TosinShada/stellar-core/exp/services/recoverysigner/internal/db/dbtest"
+	"github.com/TosinShada/stellar-core/exp/services/recoverysigner/internal/serve/auth"
+	"github.com/TosinShada/stellar-core/keypair"
+	supportlog "github.com/TosinShada/stellar-core/support/log"
 	"github.com/go-chi/chi"
-	"github.com/stellar/go/exp/services/recoverysigner/internal/account"
-	"github.com/stellar/go/exp/services/recoverysigner/internal/db/dbtest"
-	"github.com/stellar/go/exp/services/recoverysigner/internal/serve/auth"
-	"github.com/stellar/go/keypair"
-	supportlog "github.com/stellar/go/support/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

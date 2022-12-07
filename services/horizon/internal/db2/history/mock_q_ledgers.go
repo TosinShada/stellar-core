@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 type MockQLedgers struct {

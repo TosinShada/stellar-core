@@ -1,8 +1,8 @@
 package ingest
 
 import (
-	"github.com/stellar/go/exp/orderbook"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/exp/orderbook"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/stretchr/testify/mock"
 )
 

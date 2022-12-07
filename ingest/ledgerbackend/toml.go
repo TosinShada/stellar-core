@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/log"
+	"github.com/TosinShada/stellar-core/xdr"
 
 	"github.com/pelletier/go-toml"
 )

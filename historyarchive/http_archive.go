@@ -12,7 +12,7 @@ import (
 	"net/url"
 	"path"
 
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 type HttpArchiveBackend struct {

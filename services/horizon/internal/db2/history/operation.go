@@ -8,10 +8,10 @@ import (
 	"text/template"
 
 	sq "github.com/Masterminds/squirrel"
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/toid"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/toid"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // LedgerSequence return the ledger in which the effect occurred.
@@ -50,7 +50,7 @@ func preprocessDetails(details string) ([]byte, error) {
 		if strings.HasSuffix(k, "_muxed_id") {
 			if vNumber, ok := v.(json.Number); ok {
 				// transform it into a string so that _muxed_id unmarshalling works with `,string` tags
-				// see https://github.com/stellar/go/pull/3716#issuecomment-867057436
+				// see https://github.com/TosinShada/stellar-core/pull/3716#issuecomment-867057436
 				dest[k] = vNumber.String()
 			}
 		}

@@ -6,10 +6,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/network"
+	"github.com/TosinShada/stellar-core/support/db"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 const (

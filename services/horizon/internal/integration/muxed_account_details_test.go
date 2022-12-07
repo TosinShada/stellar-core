@@ -4,13 +4,13 @@ import (
 	"math"
 	"testing"
 
-	"github.com/stellar/go/clients/horizonclient"
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/protocols/horizon/effects"
-	"github.com/stellar/go/protocols/horizon/operations"
-	"github.com/stellar/go/services/horizon/internal/test/integration"
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/protocols/horizon/effects"
+	"github.com/TosinShada/stellar-core/protocols/horizon/operations"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test/integration"
+	"github.com/TosinShada/stellar-core/txnbuild"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/stretchr/testify/assert"
 )
 

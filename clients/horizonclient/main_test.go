@@ -8,17 +8,17 @@ import (
 
 	"github.com/jarcoal/httpmock"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/protocols/horizon/effects"
-	"github.com/stellar/go/protocols/horizon/operations"
-	"github.com/stellar/go/support/clock"
-	"github.com/stellar/go/support/clock/clocktest"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/http/httptest"
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/network"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/protocols/horizon/effects"
+	"github.com/TosinShada/stellar-core/protocols/horizon/operations"
+	"github.com/TosinShada/stellar-core/support/clock"
+	"github.com/TosinShada/stellar-core/support/clock/clocktest"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/http/httptest"
+	"github.com/TosinShada/stellar-core/txnbuild"
+	"github.com/TosinShada/stellar-core/xdr"
 
 	"github.com/stretchr/testify/assert"
 )

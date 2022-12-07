@@ -5,8 +5,8 @@ import (
 
 	"context"
 
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // Listener represents some client who is interested in retrieving the result

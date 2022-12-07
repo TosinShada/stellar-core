@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/horizon/internal/ledger"
-	"github.com/stellar/go/services/horizon/internal/resourceadapter"
+	"github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ledger"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/resourceadapter"
 )
 
 type GetRootHandler struct {

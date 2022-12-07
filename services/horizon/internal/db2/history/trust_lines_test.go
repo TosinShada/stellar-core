@@ -6,8 +6,8 @@ import (
 	"github.com/guregu/null"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/services/horizon/internal/test"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 var (

@@ -3,11 +3,11 @@ package cmd
 import (
 	"go/types"
 
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/network"
+	"github.com/TosinShada/stellar-core/services/regulated-assets-approval-server/internal/configureissuer"
+	"github.com/TosinShada/stellar-core/support/config"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/services/regulated-assets-approval-server/internal/configureissuer"
-	"github.com/stellar/go/support/config"
 )
 
 type ConfigureIssuer struct{}

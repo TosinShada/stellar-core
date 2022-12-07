@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 func NewPoolId(a, b Asset, fee Int32) (PoolId, error) {

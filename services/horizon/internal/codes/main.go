@@ -3,8 +3,8 @@
 package codes
 
 import (
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/go-errors/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // ErrUnknownCode is returned when an unexepcted value is provided to `String`

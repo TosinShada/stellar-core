@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/stellar/go/services/horizon/internal/codes"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/codes"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 var (

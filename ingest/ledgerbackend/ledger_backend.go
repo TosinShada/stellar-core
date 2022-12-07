@@ -3,7 +3,7 @@ package ledgerbackend
 import (
 	"context"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // LedgerBackend represents the interface to a ledger data store.

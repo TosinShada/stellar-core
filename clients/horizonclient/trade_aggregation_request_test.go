@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/http/httptest"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/support/http/httptest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

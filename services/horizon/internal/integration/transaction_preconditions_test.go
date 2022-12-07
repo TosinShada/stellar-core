@@ -9,13 +9,13 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/horizon/internal/test/integration"
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
+	sdk "github.com/TosinShada/stellar-core/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/network"
+	"github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test/integration"
+	"github.com/TosinShada/stellar-core/txnbuild"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/stretchr/testify/assert"
 )
 

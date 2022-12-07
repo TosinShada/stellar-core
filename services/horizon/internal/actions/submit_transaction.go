@@ -6,15 +6,15 @@ import (
 	"mime"
 	"net/http"
 
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/protocols/horizon"
-	hProblem "github.com/stellar/go/services/horizon/internal/render/problem"
-	"github.com/stellar/go/services/horizon/internal/resourceadapter"
-	"github.com/stellar/go/services/horizon/internal/txsub"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/render/hal"
-	"github.com/stellar/go/support/render/problem"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/network"
+	"github.com/TosinShada/stellar-core/protocols/horizon"
+	hProblem "github.com/TosinShada/stellar-core/services/horizon/internal/render/problem"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/resourceadapter"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/txsub"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/render/hal"
+	"github.com/TosinShada/stellar-core/support/render/problem"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 type NetworkSubmitter interface {

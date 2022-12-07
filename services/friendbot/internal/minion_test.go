@@ -4,15 +4,15 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/txnbuild"
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/keypair"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/txnbuild"
 	"github.com/stretchr/testify/assert"
 )
 
-// This test aims to reproduce the issue found on https://github.com/stellar/go/issues/2271
+// This test aims to reproduce the issue found on https://github.com/TosinShada/stellar-core/issues/2271
 // in which Minion.Run() will try to send multiple messages to a channel that gets closed
 // immediately after receiving one message.
 func TestMinion_NoChannelErrors(t *testing.T) {

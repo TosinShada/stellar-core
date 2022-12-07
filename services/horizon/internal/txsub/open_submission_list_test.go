@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stellar/go/services/horizon/internal/test"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
+	"github.com/TosinShada/stellar-core/support/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

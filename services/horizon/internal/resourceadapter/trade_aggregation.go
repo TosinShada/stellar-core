@@ -3,10 +3,10 @@ package resourceadapter
 import (
 	"context"
 
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/price"
-	protocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/amount"
+	"github.com/TosinShada/stellar-core/price"
+	protocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
 )
 
 // PopulateTradeAggregation fills out the details of a trade aggregation using a row from the trade aggregations

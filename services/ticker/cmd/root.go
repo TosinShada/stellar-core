@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
+	horizonclient "github.com/TosinShada/stellar-core/clients/horizonclient"
+	hlog "github.com/TosinShada/stellar-core/support/log"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	horizonclient "github.com/stellar/go/clients/horizonclient"
-	hlog "github.com/stellar/go/support/log"
 )
 
 var DatabaseURL string

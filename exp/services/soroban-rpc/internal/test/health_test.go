@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/TosinShada/stellar-core/exp/services/soroban-rpc/internal/methods"
 	"github.com/creachadair/jrpc2"
 	"github.com/creachadair/jrpc2/jhttp"
-	"github.com/stellar/go/exp/services/soroban-rpc/internal/methods"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/TosinShada/stellar-core/handlers/federation"
+	"github.com/TosinShada/stellar-core/support/app"
+	"github.com/TosinShada/stellar-core/support/config"
+	"github.com/TosinShada/stellar-core/support/db"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/http"
+	"github.com/TosinShada/stellar-core/support/log"
 	"github.com/go-chi/chi"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/handlers/federation"
-	"github.com/stellar/go/support/app"
-	"github.com/stellar/go/support/config"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/http"
-	"github.com/stellar/go/support/log"
 )
 
 // Config represents the configuration of a federation server

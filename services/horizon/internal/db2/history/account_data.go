@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 
 	sq "github.com/Masterminds/squirrel"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 func (q *Q) CountAccountsData(ctx context.Context) (int, error) {

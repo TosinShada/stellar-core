@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/support/http/httpauthz"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/support/http/httpauthz"
+	"github.com/TosinShada/stellar-core/support/log"
 	"gopkg.in/square/go-jose.v2"
 	"gopkg.in/square/go-jose.v2/jwt"
 )

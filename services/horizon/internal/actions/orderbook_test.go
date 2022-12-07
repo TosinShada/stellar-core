@@ -7,11 +7,11 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/services/horizon/internal/test"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
 	"github.com/stretchr/testify/assert"
 
-	protocol "github.com/stellar/go/protocols/horizon"
+	protocol "github.com/TosinShada/stellar-core/protocols/horizon"
 )
 
 type intObject int

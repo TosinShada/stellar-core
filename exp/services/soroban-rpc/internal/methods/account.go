@@ -3,10 +3,10 @@ package methods
 import (
 	"context"
 
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
 	"github.com/creachadair/jrpc2"
 	"github.com/creachadair/jrpc2/code"
 	"github.com/creachadair/jrpc2/handler"
-	"github.com/stellar/go/clients/horizonclient"
 )
 
 type AccountInfo struct {

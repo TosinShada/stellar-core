@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	sq "github.com/Masterminds/squirrel"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/guregu/null"
 	"github.com/jmoiron/sqlx"
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // LiquidityPoolsQuery is a helper struct to configure queries to liquidity pools

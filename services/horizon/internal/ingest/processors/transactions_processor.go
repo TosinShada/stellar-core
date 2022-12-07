@@ -3,9 +3,9 @@ package processors
 import (
 	"context"
 
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/ingest"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 type TransactionProcessor struct {

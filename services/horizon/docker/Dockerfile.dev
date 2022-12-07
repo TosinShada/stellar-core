@@ -4,8 +4,8 @@ WORKDIR /go/src/github.com/stellar/go
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . ./
-RUN go install github.com/stellar/go/services/horizon
-RUN go install github.com/stellar/go/exp/services/captivecore
+RUN go install github.com/TosinShada/stellar-core/services/horizon
+RUN go install github.com/TosinShada/stellar-core/exp/services/captivecore
 
 FROM ubuntu:20.04
 ARG STELLAR_CORE_VERSION 

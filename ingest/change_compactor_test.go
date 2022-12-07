@@ -3,7 +3,7 @@ package ingest
 import (
 	"testing"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

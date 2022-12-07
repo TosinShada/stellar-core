@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/TosinShada/stellar-core/services/ticker/internal/gql/static"
+	"github.com/TosinShada/stellar-core/services/ticker/internal/tickerdb"
+	hlog "github.com/TosinShada/stellar-core/support/log"
 	"github.com/graph-gophers/graphql-go"
 	"github.com/graph-gophers/graphql-go/relay"
-	"github.com/stellar/go/services/ticker/internal/gql/static"
-	"github.com/stellar/go/services/ticker/internal/tickerdb"
-	hlog "github.com/stellar/go/support/log"
 )
 
 // asset represents a Stellar asset, with some type

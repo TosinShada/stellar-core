@@ -1,8 +1,9 @@
 package horizonclient
 
 import (
-	"github.com/stellar/go/support/errors"
 	"net/http"
+
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 // BuildURL returns the url for getting fee stats about a running horizon instance

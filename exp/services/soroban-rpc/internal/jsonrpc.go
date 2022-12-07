@@ -6,8 +6,8 @@ import (
 	"github.com/creachadair/jrpc2/handler"
 	"github.com/creachadair/jrpc2/jhttp"
 
-	"github.com/stellar/go/exp/services/soroban-rpc/internal/methods"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/exp/services/soroban-rpc/internal/methods"
+	"github.com/TosinShada/stellar-core/support/log"
 )
 
 // Handler is the HTTP handler which serves the Soroban JSON RPC responses

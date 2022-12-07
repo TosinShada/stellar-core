@@ -15,8 +15,8 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 type XdrStream struct {

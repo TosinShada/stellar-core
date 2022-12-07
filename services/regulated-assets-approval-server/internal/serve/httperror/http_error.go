@@ -3,9 +3,9 @@ package httperror
 import (
 	"net/http"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/render/httpjson"
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/render/httpjson"
 )
 
 type Error struct {

@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/stellar/go/ingest"
+	"github.com/TosinShada/stellar-core/ingest"
 )
 
 var _ horizonChangeProcessor = (*mockHorizonChangeProcessor)(nil)

@@ -3,8 +3,8 @@ package ingest
 import (
 	"bytes"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // Change is a developer friendly representation of LedgerEntryChanges.

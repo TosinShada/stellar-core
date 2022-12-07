@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
+	"github.com/TosinShada/stellar-core/services/ticker/internal/tickerdb"
+	"github.com/TosinShada/stellar-core/services/ticker/internal/utils"
 	"github.com/graph-gophers/graphql-go"
-	"github.com/stellar/go/services/ticker/internal/tickerdb"
-	"github.com/stellar/go/services/ticker/internal/utils"
 )
 
 // Markets resolves the markets() GraphQL query.

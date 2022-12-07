@@ -1,8 +1,8 @@
 package pg
 
 import (
+	"github.com/TosinShada/stellar-core/support/errors"
 	"github.com/lib/pq"
-	"github.com/stellar/go/support/errors"
 )
 
 func IsUniqueViolation(err error) bool {

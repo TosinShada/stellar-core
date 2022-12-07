@@ -1,9 +1,9 @@
 package ingest
 
 import (
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/amount"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // GenesisChange returns the Change occurring at the genesis ledger (ledgerseq = 1)..

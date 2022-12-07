@@ -14,12 +14,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/network"
 
+	"github.com/TosinShada/stellar-core/txnbuild"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/howeyc/gopass"
-	"github.com/stellar/go/txnbuild"
-	"github.com/stellar/go/xdr"
 )
 
 type SignOrVerify struct {

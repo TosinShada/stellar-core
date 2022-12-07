@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/stellar/go/strkey"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/strkey"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 // Address returns the strkey encoded form of this signer key.  This method will

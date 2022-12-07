@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strconv"
 
+	"github.com/TosinShada/stellar-core/support/errors"
 	"github.com/jarcoal/httpmock"
-	"github.com/stellar/go/support/errors"
 )
 
 // Return specifies the response for a ClientExpectation, which is then

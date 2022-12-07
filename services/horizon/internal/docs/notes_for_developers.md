@@ -19,7 +19,7 @@ Compile and install Horizon as described in the [Horizon development guide](deve
 Horizon uses two Go tools you'll need to install:
 1. [go-bindata](github.com/kevinburke/go-bindata) is used to bundle test data
 
-After the above are installed, run `go generate github.com/stellar/go/services/horizon/...`.
+After the above are installed, run `go generate github.com/TosinShada/stellar-core/services/horizon/...`.
 
 ### Example recipe
 
@@ -47,7 +47,7 @@ You can find more recipes in [`scc` examples](https://github.com/stellar/stellar
 
 ### Deprecated Scenario sql files
 
-Scenarios are in [horizon test scenarios](https://github.com/stellar/go/tree/master/services/horizon/internal/test/scenarios). They are used by many different integration tests, however, they are deprecated and are not meant to be used or included in new development. They were manually maintained and have not been updated with more recent db schema changes and are not associated with db migrations. 
+Scenarios are in [horizon test scenarios](https://github.com/TosinShada/stellar-core/tree/master/services/horizon/internal/test/scenarios). They are used by many different integration tests, however, they are deprecated and are not meant to be used or included in new development. They were manually maintained and have not been updated with more recent db schema changes and are not associated with db migrations. 
 
 ## <a name="author_tests"></a> Writing Tests
 
@@ -64,7 +64,7 @@ go test ./...
 or run individual Horizon tests like so, providing the expected arguments:
 
 ```bash
-go test github.com/stellar/go/services/horizon/...
+go test github.com/TosinShada/stellar-core/services/horizon/...
 ```
 
 To run the integration tests, move to top folder of working copy of `go` repo to run all integration tests 
@@ -80,7 +80,7 @@ HORIZON_INTEGRATION_TESTS_ENABLED=true go test -run TestTxsub -race -timeout 25m
 
 ## <a name="logging"></a> Logging
 
-All logging infrastructure is in the `github.com/stellar/go/tree/master/services/horizon/internal/log` package.  This package provides "level-based" logging:  Each logging statement has a severity, one of "Debug", "Info", "Warn", "Error" or "Panic".  The Horizon server has a configured level "filter", specified either using the `--log-level` command line flag or the `LOG_LEVEL` environment variable.  When a logging statement is executed, the statements declared severity is checked against the filter and will only be emitted if the severity of the statement is equal or higher severity than the filter.
+All logging infrastructure is in the `github.com/TosinShada/stellar-core/tree/master/services/horizon/internal/log` package.  This package provides "level-based" logging:  Each logging statement has a severity, one of "Debug", "Info", "Warn", "Error" or "Panic".  The Horizon server has a configured level "filter", specified either using the `--log-level` command line flag or the `LOG_LEVEL` environment variable.  When a logging statement is executed, the statements declared severity is checked against the filter and will only be emitted if the severity of the statement is equal or higher severity than the filter.
 
 In addition, the logging subsystem has support for fields: Arbitrary key-value pairs that will be associated with an entry to allow for filtering and additional contextual information.
 

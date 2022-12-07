@@ -4,8 +4,8 @@ import (
 	"encoding/base64"
 	"sync"
 
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // ChangeCompactor is a cache of ledger entry changes that squashes all

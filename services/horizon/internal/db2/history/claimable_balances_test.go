@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/services/horizon/internal/test"
-	"github.com/stellar/go/xdr"
 )
 
 func TestRemoveClaimableBalance(t *testing.T) {

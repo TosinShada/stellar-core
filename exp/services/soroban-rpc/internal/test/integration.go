@@ -15,11 +15,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/clients/stellarcore"
-	"github.com/stellar/go/exp/services/soroban-rpc/internal"
-	"github.com/stellar/go/exp/services/soroban-rpc/internal/methods"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/clients/stellarcore"
+	"github.com/TosinShada/stellar-core/exp/services/soroban-rpc/internal"
+	"github.com/TosinShada/stellar-core/exp/services/soroban-rpc/internal/methods"
+	"github.com/TosinShada/stellar-core/support/log"
 )
 
 const (

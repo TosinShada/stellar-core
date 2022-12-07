@@ -5,8 +5,8 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 func (q *Q) GetAccountSignersByAccountID(ctx context.Context, id string) ([]AccountSigner, error) {

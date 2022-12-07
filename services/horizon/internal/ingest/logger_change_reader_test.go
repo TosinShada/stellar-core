@@ -6,8 +6,8 @@ import (
 
 	"io"
 
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/ingest"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/stretchr/testify/assert"
 )
 

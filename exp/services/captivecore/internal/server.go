@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/stellar/go/ingest/ledgerbackend"
-	supporthttp "github.com/stellar/go/support/http"
-	"github.com/stellar/go/support/http/httpdecode"
-	supportlog "github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/ingest/ledgerbackend"
+	supporthttp "github.com/TosinShada/stellar-core/support/http"
+	"github.com/TosinShada/stellar-core/support/http/httpdecode"
+	supportlog "github.com/TosinShada/stellar-core/support/log"
 )
 
 func serializeResponse(

@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	horizonclient "github.com/stellar/go/clients/horizonclient"
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
+	horizonclient "github.com/TosinShada/stellar-core/clients/horizonclient"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/log"
 	"github.com/stretchr/testify/assert"
 )
 

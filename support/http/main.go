@@ -10,9 +10,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/stellar/go/support/config"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/support/config"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/log"
 	"gopkg.in/tylerb/graceful.v1"
 )
 

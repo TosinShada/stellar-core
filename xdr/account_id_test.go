@@ -4,7 +4,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "github.com/stellar/go/xdr"
+	. "github.com/TosinShada/stellar-core/xdr"
 )
 
 var _ = Describe("xdr.AccountId#Address()", func() {

@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/support/render/problem"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/render/problem"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 var (

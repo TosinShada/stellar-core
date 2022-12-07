@@ -9,10 +9,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	tdb "github.com/TosinShada/stellar-core/services/horizon/internal/test/db"
+	"github.com/TosinShada/stellar-core/support/log"
 	"github.com/jmoiron/sqlx"
 	"github.com/sirupsen/logrus"
-	tdb "github.com/stellar/go/services/horizon/internal/test/db"
-	"github.com/stellar/go/support/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

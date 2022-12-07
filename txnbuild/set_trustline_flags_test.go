@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 func TestSetTrustLineFlags(t *testing.T) {

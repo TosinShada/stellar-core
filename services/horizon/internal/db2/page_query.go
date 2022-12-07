@@ -8,7 +8,7 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 const (

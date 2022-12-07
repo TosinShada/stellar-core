@@ -3,8 +3,8 @@ package history
 import (
 	"context"
 
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/xdr"
 	"github.com/stretchr/testify/mock"
 )
 

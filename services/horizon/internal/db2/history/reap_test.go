@@ -3,10 +3,10 @@ package history_test
 import (
 	"testing"
 
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/services/horizon/internal/ledger"
-	"github.com/stellar/go/services/horizon/internal/reap"
-	"github.com/stellar/go/services/horizon/internal/test"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ledger"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/reap"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
 )
 
 func TestReapLookupTables(t *testing.T) {

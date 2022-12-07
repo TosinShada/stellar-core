@@ -3,8 +3,8 @@ package xdr
 import (
 	"fmt"
 
+	"github.com/TosinShada/stellar-core/strkey"
 	"github.com/pkg/errors"
-	"github.com/stellar/go/strkey"
 )
 
 func MustMuxedAddress(address string) MuxedAccount {

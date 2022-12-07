@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 // Creates the URL to either request a specific claimable balance (CB) by ID, or

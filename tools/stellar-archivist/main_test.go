@@ -7,7 +7,7 @@ package main
 import (
 	"testing"
 
-	"github.com/stellar/go/historyarchive"
+	"github.com/TosinShada/stellar-core/historyarchive"
 	"github.com/stretchr/testify/assert"
 )
 

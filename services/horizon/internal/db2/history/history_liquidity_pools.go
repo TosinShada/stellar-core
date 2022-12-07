@@ -5,8 +5,8 @@ import (
 	"sort"
 
 	sq "github.com/Masterminds/squirrel"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/support/db"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 // QHistoryLiquidityPools defines account related queries.
@@ -30,7 +30,7 @@ func (q *Q) CreateHistoryLiquidityPools(ctx context.Context, poolIDs []string, b
 	}
 
 	// sort before inserting to prevent deadlocks on acquiring a ShareLock
-	// https://github.com/stellar/go/issues/2370
+	// https://github.com/TosinShada/stellar-core/issues/2370
 	sort.Strings(poolIDs)
 	var deduped []string
 	for i, id := range poolIDs {

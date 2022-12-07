@@ -3,9 +3,9 @@ package cmd
 import (
 	"encoding/json"
 
+	"github.com/TosinShada/stellar-core/exp/support/jwtkey"
+	supportlog "github.com/TosinShada/stellar-core/support/log"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/exp/support/jwtkey"
-	supportlog "github.com/stellar/go/support/log"
 	"gopkg.in/square/go-jose.v2"
 )
 

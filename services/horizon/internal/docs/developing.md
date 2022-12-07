@@ -47,7 +47,7 @@ If you get the error `zsh: no matches found: postgres://localhost/horizon_dev?ss
 ## Run tests
 At this point you should be able to run Horizon's unit tests:
 ```bash
-cd $GOPATH/src/github.com/stellar/go/services/horizon
+cd $GOPATH/src/github.com/TosinShada/stellar-core/services/horizon
 go test ./...
 ```
 
@@ -100,7 +100,7 @@ and read about the available endpoints and see examples in the [Horizon API refe
 Congratulations! You can now run the full development cycle to build and test your code.
 1. Write code + tests
 2. Run tests
-3. Compile Horizon: `go install github.com/stellar/go/services/horizon`
+3. Compile Horizon: `go install github.com/TosinShada/stellar-core/services/horizon`
 4. Run Horizon (pointing at your running `stellar-core`)
 5. Try Horizon queries
 

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/http"
 
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	horizonContext "github.com/stellar/go/services/horizon/internal/context"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/support/render/problem"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	horizonContext "github.com/TosinShada/stellar-core/services/horizon/internal/context"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/support/render/problem"
 )
 
 // these admin HTTP endpoints are documented in services/horizon/internal/httpx/static/admin_oapi.yml

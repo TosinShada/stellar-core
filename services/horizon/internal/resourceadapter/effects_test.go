@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/TosinShada/stellar-core/protocols/horizon/effects"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/support/render/hal"
+	"github.com/TosinShada/stellar-core/support/test"
 	"github.com/guregu/null"
-	"github.com/stellar/go/protocols/horizon/effects"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/support/render/hal"
-	"github.com/stellar/go/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

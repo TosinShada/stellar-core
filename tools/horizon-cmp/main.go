@@ -12,12 +12,12 @@ import (
 	"sync"
 	"time"
 
+	client "github.com/TosinShada/stellar-core/clients/horizonclient"
+	protocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/support/errors"
+	slog "github.com/TosinShada/stellar-core/support/log"
+	cmp "github.com/TosinShada/stellar-core/tools/horizon-cmp/internal"
 	"github.com/spf13/cobra"
-	client "github.com/stellar/go/clients/horizonclient"
-	protocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/errors"
-	slog "github.com/stellar/go/support/log"
-	cmp "github.com/stellar/go/tools/horizon-cmp/internal"
 )
 
 // maxLevels defines the maximum number of levels deep the crawler

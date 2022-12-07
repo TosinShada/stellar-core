@@ -10,7 +10,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/stellar/go/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
 	"github.com/stretchr/testify/mock"
 )
 

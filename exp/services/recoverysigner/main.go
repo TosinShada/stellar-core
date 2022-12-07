@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/TosinShada/stellar-core/exp/services/recoverysigner/cmd"
+	supportlog "github.com/TosinShada/stellar-core/support/log"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"github.com/stellar/go/exp/services/recoverysigner/cmd"
-	supportlog "github.com/stellar/go/support/log"
 )
 
 func main() {

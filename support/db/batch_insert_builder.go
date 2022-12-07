@@ -7,7 +7,7 @@ import (
 	"sort"
 
 	sq "github.com/Masterminds/squirrel"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 // BatchInsertBuilder works like sq.InsertBuilder but has a better support for batching

@@ -4,8 +4,8 @@ import (
 	"math"
 	"time"
 
-	hClient "github.com/stellar/go/clients/horizonclient"
-	hProtocol "github.com/stellar/go/protocols/horizon"
+	hClient "github.com/TosinShada/stellar-core/clients/horizonclient"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
 )
 
 type trackerClient struct {

@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	sq "github.com/Masterminds/squirrel"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/services/horizon/internal/db2"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // ClaimableBalancesQuery is a helper struct to configure queries to claimable balances

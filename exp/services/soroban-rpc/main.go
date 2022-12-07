@@ -9,12 +9,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/exp/services/soroban-rpc/internal"
-	"github.com/stellar/go/exp/services/soroban-rpc/internal/methods"
-	"github.com/stellar/go/support/config"
-	supporthttp "github.com/stellar/go/support/http"
-	supportlog "github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/exp/services/soroban-rpc/internal"
+	"github.com/TosinShada/stellar-core/exp/services/soroban-rpc/internal/methods"
+	"github.com/TosinShada/stellar-core/support/config"
+	supporthttp "github.com/TosinShada/stellar-core/support/http"
+	supportlog "github.com/TosinShada/stellar-core/support/log"
 )
 
 func main() {

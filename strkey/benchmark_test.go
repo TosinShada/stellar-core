@@ -3,7 +3,7 @@ package strkey_test
 import (
 	"testing"
 
-	"github.com/stellar/go/strkey"
+	"github.com/TosinShada/stellar-core/strkey"
 	"github.com/stretchr/testify/require"
 )
 

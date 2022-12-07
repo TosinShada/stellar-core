@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
+	"github.com/TosinShada/stellar-core/toid"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/services/horizon/internal/test"
-	"github.com/stellar/go/toid"
-	"github.com/stellar/go/xdr"
 )
 
 func TestAddOperation(t *testing.T) {

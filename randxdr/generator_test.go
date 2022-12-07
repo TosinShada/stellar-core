@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/stellar/go/gxdr"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/gxdr"
+	"github.com/TosinShada/stellar-core/xdr"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -5,8 +5,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/stellar/go/strkey/internal/crc16"
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/strkey/internal/crc16"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 // ErrInvalidVersionByte is returned when the version byte from a provided

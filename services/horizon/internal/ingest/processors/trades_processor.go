@@ -8,12 +8,12 @@ import (
 
 	"github.com/guregu/null"
 
-	"github.com/stellar/go/exp/orderbook"
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/toid"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/exp/orderbook"
+	"github.com/TosinShada/stellar-core/ingest"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/toid"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // TradeProcessor operations processor
@@ -244,7 +244,7 @@ func (p *TradeProcessor) roundingSlippage(
 			true,
 		)
 		if !ok {
-			// Temporary workaround for https://github.com/stellar/go/issues/4203
+			// Temporary workaround for https://github.com/TosinShada/stellar-core/issues/4203
 			// Give strict receives that would underflow here, maximum slippage so
 			// they get excluded.
 			roundingSlippageBips = xdr.Int64(math.MaxInt64)

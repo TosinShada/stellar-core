@@ -6,10 +6,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/ingest/ledgerbackend"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/ingest"
+	"github.com/TosinShada/stellar-core/ingest/ledgerbackend"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 )

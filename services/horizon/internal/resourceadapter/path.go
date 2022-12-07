@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/horizon/internal/paths"
+	"github.com/TosinShada/stellar-core/amount"
+	"github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/paths"
 )
 
 func extractAsset(asset string, t, c, i *string) error {

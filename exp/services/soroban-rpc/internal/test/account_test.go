@@ -2,15 +2,16 @@ package test
 
 import (
 	"context"
-	"github.com/creachadair/jrpc2/code"
-	"github.com/stellar/go/keypair"
 	"testing"
+
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/creachadair/jrpc2/code"
 
 	"github.com/creachadair/jrpc2"
 	"github.com/creachadair/jrpc2/jhttp"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/exp/services/soroban-rpc/internal/methods"
+	"github.com/TosinShada/stellar-core/exp/services/soroban-rpc/internal/methods"
 )
 
 func TestAccount(t *testing.T) {

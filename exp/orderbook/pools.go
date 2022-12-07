@@ -3,9 +3,9 @@ package orderbook
 import (
 	"math"
 
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/holiman/uint256"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
 )
 
 // There are two different exchanges that can be simulated:

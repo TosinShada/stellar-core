@@ -4,8 +4,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/stellar/go/services/horizon/internal/test/integration"
-	"github.com/stellar/go/txnbuild"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test/integration"
+	"github.com/TosinShada/stellar-core/txnbuild"
 	"github.com/stretchr/testify/assert"
 )
 

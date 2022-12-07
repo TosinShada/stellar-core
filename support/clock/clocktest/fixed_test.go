@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stellar/go/support/clock"
-	"github.com/stellar/go/support/clock/clocktest"
+	"github.com/TosinShada/stellar-core/support/clock"
+	"github.com/TosinShada/stellar-core/support/clock/clocktest"
 	"github.com/stretchr/testify/assert"
 )
 

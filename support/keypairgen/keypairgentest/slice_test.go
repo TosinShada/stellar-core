@@ -3,8 +3,8 @@ package keypairgentest_test
 import (
 	"testing"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/support/keypairgen/keypairgentest"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/support/keypairgen/keypairgentest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

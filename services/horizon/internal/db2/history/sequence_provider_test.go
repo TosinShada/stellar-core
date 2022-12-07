@@ -3,7 +3,7 @@ package history
 import (
 	"testing"
 
-	"github.com/stellar/go/services/horizon/internal/test"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
 	"github.com/stretchr/testify/assert"
 )
 

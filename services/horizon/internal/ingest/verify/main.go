@@ -7,9 +7,9 @@ import (
 	"encoding/base64"
 	"io"
 
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/ingest"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // TransformLedgerEntryFunction is a function that transforms ledger entry

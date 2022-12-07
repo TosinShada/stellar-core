@@ -3,8 +3,8 @@ package gql
 import (
 	"testing"
 
+	"github.com/TosinShada/stellar-core/services/ticker/internal/gql/static"
 	"github.com/graph-gophers/graphql-go"
-	"github.com/stellar/go/services/ticker/internal/gql/static"
 )
 
 func TestValidateSchema(t *testing.T) {

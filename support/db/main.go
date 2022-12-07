@@ -20,8 +20,8 @@ import (
 	"time"
 
 	"github.com/Masterminds/squirrel"
+	"github.com/TosinShada/stellar-core/support/errors"
 	"github.com/jmoiron/sqlx"
-	"github.com/stellar/go/support/errors"
 
 	// Enable postgres
 	_ "github.com/lib/pq"

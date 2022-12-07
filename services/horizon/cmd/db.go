@@ -10,17 +10,17 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
 
-	horizon "github.com/stellar/go/services/horizon/internal"
-	"github.com/stellar/go/services/horizon/internal/db2/schema"
-	"github.com/stellar/go/services/horizon/internal/ingest"
-	support "github.com/stellar/go/support/config"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/errors"
-	hlog "github.com/stellar/go/support/log"
+	horizon "github.com/TosinShada/stellar-core/services/horizon/internal"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/schema"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ingest"
+	support "github.com/TosinShada/stellar-core/support/config"
+	"github.com/TosinShada/stellar-core/support/db"
+	"github.com/TosinShada/stellar-core/support/errors"
+	hlog "github.com/TosinShada/stellar-core/support/log"
 )
 
 var dbCmd = &cobra.Command{

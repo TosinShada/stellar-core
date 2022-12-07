@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stellar/go/protocols/stellarcore"
-	"github.com/stellar/go/support/clock"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/protocols/stellarcore"
+	"github.com/TosinShada/stellar-core/support/clock"
+	"github.com/TosinShada/stellar-core/support/db"
+	"github.com/TosinShada/stellar-core/support/log"
 )
 
 const (

@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/services/horizon/internal/ingest"
-	"github.com/stellar/go/services/horizon/internal/ledger"
+	"github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ingest"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/ledger"
 )
 
 func TestPopulateRoot(t *testing.T) {

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/stellar/go/services/ticker/internal/tickerdb"
-	"github.com/stellar/go/services/ticker/internal/utils"
-	hlog "github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/services/ticker/internal/tickerdb"
+	"github.com/TosinShada/stellar-core/services/ticker/internal/utils"
+	hlog "github.com/TosinShada/stellar-core/support/log"
 )
 
 // GenerateMarketSummaryFile generates a MarketSummary with the statistics for all

@@ -7,17 +7,17 @@ import (
 	"path"
 	"time"
 
+	"github.com/TosinShada/stellar-core/amount"
+	"github.com/TosinShada/stellar-core/clients/horizonclient"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/services/regulated-assets-approval-server/internal/db"
+	"github.com/TosinShada/stellar-core/services/regulated-assets-approval-server/internal/serve/kycstatus"
+	"github.com/TosinShada/stellar-core/support/errors"
+	supporthttp "github.com/TosinShada/stellar-core/support/http"
+	"github.com/TosinShada/stellar-core/support/log"
+	"github.com/TosinShada/stellar-core/support/render/health"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/clients/horizonclient"
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/services/regulated-assets-approval-server/internal/db"
-	"github.com/stellar/go/services/regulated-assets-approval-server/internal/serve/kycstatus"
-	"github.com/stellar/go/support/errors"
-	supporthttp "github.com/stellar/go/support/http"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/support/render/health"
 )
 
 type Options struct {

@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/log"
+	"github.com/TosinShada/stellar-core/support/render/health"
+	"github.com/TosinShada/stellar-core/support/render/httpjson"
+	"github.com/TosinShada/stellar-core/support/render/problem"
 	"github.com/rs/cors"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/support/render/health"
-	"github.com/stellar/go/support/render/httpjson"
-	"github.com/stellar/go/support/render/problem"
 )
 
 func init() {

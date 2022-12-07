@@ -6,10 +6,10 @@ import (
 
 	"github.com/stellar/throttled"
 
-	"github.com/stellar/go/network"
-	"github.com/stellar/go/services/horizon/internal/test"
-	tdb "github.com/stellar/go/services/horizon/internal/test/db"
-	supportLog "github.com/stellar/go/support/log"
+	"github.com/TosinShada/stellar-core/network"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test"
+	tdb "github.com/TosinShada/stellar-core/services/horizon/internal/test/db"
+	supportLog "github.com/TosinShada/stellar-core/support/log"
 )
 
 func NewTestApp(dsn string) *App {

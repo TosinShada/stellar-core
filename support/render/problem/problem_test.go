@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/TosinShada/stellar-core/support/log"
+	"github.com/TosinShada/stellar-core/support/test"
 	ge "github.com/go-errors/errors"
-	"github.com/stellar/go/support/log"
-	"github.com/stellar/go/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,7 +3,7 @@ package txnbuild
 import (
 	"fmt"
 
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // Operation represents the operation types of the Stellar network.

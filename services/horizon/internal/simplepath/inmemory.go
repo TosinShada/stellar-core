@@ -3,10 +3,10 @@ package simplepath
 import (
 	"context"
 
+	"github.com/TosinShada/stellar-core/exp/orderbook"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/paths"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/go-errors/errors"
-	"github.com/stellar/go/exp/orderbook"
-	"github.com/stellar/go/services/horizon/internal/paths"
-	"github.com/stellar/go/xdr"
 )
 
 const (

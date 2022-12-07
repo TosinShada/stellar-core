@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/stellar/go/price"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/price"
+	"github.com/TosinShada/stellar-core/xdr"
 
-	"github.com/stellar/go/keypair"
-	"github.com/stellar/go/network"
-	horizonclient "github.com/stellar/go/txnbuild/examplehorizonclient"
+	"github.com/TosinShada/stellar-core/keypair"
+	"github.com/TosinShada/stellar-core/network"
+	horizonclient "github.com/TosinShada/stellar-core/txnbuild/examplehorizonclient"
 )
 
 func ExampleInflation() {

@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"time"
 
-	hProtocol "github.com/stellar/go/protocols/horizon"
-	"github.com/stellar/go/support/errors"
+	hProtocol "github.com/TosinShada/stellar-core/protocols/horizon"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 // port - the horizon admin port, zero value defaults to 4200

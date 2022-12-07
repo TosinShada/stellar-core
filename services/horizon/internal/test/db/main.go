@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	// pq enables postgres support
+	db "github.com/TosinShada/stellar-core/support/db/dbtest"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
-	db "github.com/stellar/go/support/db/dbtest"
 )
 
 var (

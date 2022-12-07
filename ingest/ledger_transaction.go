@@ -1,8 +1,8 @@
 package ingest
 
 import (
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // LedgerTransaction represents the data for a single transaction within a ledger.
@@ -44,7 +44,7 @@ func (t *LedgerTransaction) GetChanges() ([]Change, error) {
 		txChanges := GetChangesFromLedgerEntryChanges(v1Meta.TxChanges)
 		changes = append(changes, txChanges...)
 
-		// Ignore operations meta if txInternalError https://github.com/stellar/go/issues/2111
+		// Ignore operations meta if txInternalError https://github.com/TosinShada/stellar-core/issues/2111
 		if t.txInternalError() {
 			return changes, nil
 		}
@@ -62,7 +62,7 @@ func (t *LedgerTransaction) GetChanges() ([]Change, error) {
 		changes = append(changes, txChangesBefore...)
 
 		// Ignore operations meta and txChangesAfter if txInternalError
-		// https://github.com/stellar/go/issues/2111
+		// https://github.com/TosinShada/stellar-core/issues/2111
 		if t.txInternalError() {
 			return changes, nil
 		}
@@ -102,7 +102,7 @@ func (t *LedgerTransaction) GetOperationChanges(operationIndex uint32) ([]Change
 	case 0:
 		return changes, errors.New("TransactionMeta.V=0 not supported")
 	case 1:
-		// Ignore operations meta if txInternalError https://github.com/stellar/go/issues/2111
+		// Ignore operations meta if txInternalError https://github.com/TosinShada/stellar-core/issues/2111
 		if t.txInternalError() {
 			return changes, nil
 		}
@@ -110,7 +110,7 @@ func (t *LedgerTransaction) GetOperationChanges(operationIndex uint32) ([]Change
 		v1Meta := t.UnsafeMeta.MustV1()
 		changes = operationChanges(v1Meta.Operations, operationIndex)
 	case 2:
-		// Ignore operations meta if txInternalError https://github.com/stellar/go/issues/2111
+		// Ignore operations meta if txInternalError https://github.com/TosinShada/stellar-core/issues/2111
 		if t.txInternalError() {
 			return changes, nil
 		}

@@ -8,10 +8,10 @@ import (
 	"os"
 	"time"
 
+	horizon "github.com/TosinShada/stellar-core/services/horizon/internal"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/support/log"
 	"github.com/spf13/cobra"
-	horizon "github.com/stellar/go/services/horizon/internal"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/support/log"
 )
 
 var recordMetricsCmd = &cobra.Command{

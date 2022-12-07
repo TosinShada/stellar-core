@@ -3,9 +3,9 @@ package txnbuild
 import (
 	"math"
 
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/amount"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 // ChangeTrust represents the Stellar change trust operation. See

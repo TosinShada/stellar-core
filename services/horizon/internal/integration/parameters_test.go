@@ -2,8 +2,6 @@
 package integration
 
 import (
-	"github.com/stellar/go/services/horizon/internal/paths"
-	"github.com/stellar/go/services/horizon/internal/simplepath"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -11,8 +9,11 @@ import (
 	"strings"
 	"testing"
 
-	horizon "github.com/stellar/go/services/horizon/internal"
-	"github.com/stellar/go/services/horizon/internal/test/integration"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/paths"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/simplepath"
+
+	horizon "github.com/TosinShada/stellar-core/services/horizon/internal"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/test/integration"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"

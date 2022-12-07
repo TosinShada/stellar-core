@@ -6,14 +6,14 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/TosinShada/stellar-core/amount"
+	"github.com/TosinShada/stellar-core/ingest"
+	"github.com/TosinShada/stellar-core/protocols/horizon/base"
+	"github.com/TosinShada/stellar-core/services/horizon/internal/db2/history"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/toid"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/amount"
-	"github.com/stellar/go/ingest"
-	"github.com/stellar/go/protocols/horizon/base"
-	"github.com/stellar/go/services/horizon/internal/db2/history"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/toid"
-	"github.com/stellar/go/xdr"
 )
 
 // OperationProcessor operations processor
@@ -275,7 +275,7 @@ func addAccountAndMuxedAccountDetails(result map[string]interface{}, a xdr.Muxed
 	if a.Type == xdr.CryptoKeyTypeKeyTypeMuxedEd25519 {
 		result[prefix+"_muxed"] = a.Address()
 		// _muxed_id fields should had ideally been stored in the DB as a string instead of uint64
-		// due to Javascript not being able to handle them, see https://github.com/stellar/go/issues/3714
+		// due to Javascript not being able to handle them, see https://github.com/TosinShada/stellar-core/issues/3714
 		// However, we released this code in the wild before correcting it. Thus, what we do is
 		// work around it (by preprocessing it into a string) in Operation.UnmarshalDetails()
 		result[prefix+"_muxed_id"] = uint64(a.Med25519.Id)

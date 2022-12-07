@@ -5,7 +5,7 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/stellar/go/support/errors"
+	"github.com/TosinShada/stellar-core/support/errors"
 )
 
 func (q *Q) GetSequenceNumbers(ctx context.Context, addresses []string) (map[string]uint64, error) {

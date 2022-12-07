@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/stellar/go/services/ticker/internal/tickerdb"
+	"github.com/TosinShada/stellar-core/services/ticker/internal/tickerdb"
 )
 
 // Issuers resolves the issuers() GraphQL query.

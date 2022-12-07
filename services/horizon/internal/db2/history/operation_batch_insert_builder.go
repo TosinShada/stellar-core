@@ -3,9 +3,9 @@ package history
 import (
 	"context"
 
+	"github.com/TosinShada/stellar-core/support/db"
+	"github.com/TosinShada/stellar-core/xdr"
 	"github.com/guregu/null"
-	"github.com/stellar/go/support/db"
-	"github.com/stellar/go/xdr"
 )
 
 // OperationBatchInsertBuilder is used to insert a transaction's operations into the

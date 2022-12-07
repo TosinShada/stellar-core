@@ -6,12 +6,12 @@ import (
 	"strings"
 	"testing"
 
+	dbpkg "github.com/TosinShada/stellar-core/exp/services/recoverysigner/internal/db"
+	"github.com/TosinShada/stellar-core/exp/services/recoverysigner/internal/db/dbtest"
+	supportHttp "github.com/TosinShada/stellar-core/support/http"
 	assetfs "github.com/elazarl/go-bindata-assetfs"
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/shurcooL/httpfs/filter"
-	dbpkg "github.com/stellar/go/exp/services/recoverysigner/internal/db"
-	"github.com/stellar/go/exp/services/recoverysigner/internal/db/dbtest"
-	supportHttp "github.com/stellar/go/support/http"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

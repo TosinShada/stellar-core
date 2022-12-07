@@ -7,9 +7,9 @@ import (
 
 	"strings"
 
-	"github.com/stellar/go/hash"
-	"github.com/stellar/go/support/errors"
-	"github.com/stellar/go/xdr"
+	"github.com/TosinShada/stellar-core/hash"
+	"github.com/TosinShada/stellar-core/support/errors"
+	"github.com/TosinShada/stellar-core/xdr"
 )
 
 const (
